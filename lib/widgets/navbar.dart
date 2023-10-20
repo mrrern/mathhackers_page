@@ -30,7 +30,7 @@ class DesktopNavBar extends HookConsumerWidget {
           children: <Widget>[
             Image.asset(
               logo2ln,
-              height: MediaQuery.of(context).size.height * .2,
+              height: MediaQuery.of(context).size.height * .17,
             ),
             Expanded(child: Container()),
             NavBarButton(
@@ -119,7 +119,7 @@ class MobileNavBar extends HookConsumerWidget {
               children: <Widget>[
                 Image.asset(
                   logo2ln,
-                  height: MediaQuery.of(context).size.height * .15,
+                  height: MediaQuery.of(context).size.height * .13,
                 ),
                 SizedBox(width: 10.0),
                 Expanded(

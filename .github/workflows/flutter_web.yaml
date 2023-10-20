@@ -19,13 +19,13 @@ jobs:
         channel: 'beta'
         
     - name: Enable Flutter web 
-      run: flutter config --enable-web
+      run: flutter config --enable-web 
       
     - name: Install dependencies
       run: flutter packages get
       
     - name: Build web
-      run: flutter build web
+      run: flutter build web --release --web-renderer html --base-href ./
       
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
