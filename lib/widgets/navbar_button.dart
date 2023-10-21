@@ -31,11 +31,12 @@ class NavBarButton extends HookConsumerWidget {
             margin: EdgeInsets.symmetric(horizontal: 16),
             child: Text(
               text,
-              style: TextStyle(
+              style: GoogleFonts.josefinSans(
+                  textStyle: TextStyle(
                 fontSize: 20,
-                fontWeight: FontWeight.w600,
+                fontWeight: FontWeight.w700,
                 color: textColor.value,
-              ),
+              )),
             ),
           ),
         ),

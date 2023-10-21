@@ -20,7 +20,7 @@ class DesktopNavBar extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final isScrolled = ref.watch(scrolledProvider);
-    final navBarColor = isScrolled ? darkBlue : Colors.white;
+    final navBarColor = isScrolled ? Colors.white : Colors.transparent;
 
     return Container(
       color: navBarColor,
@@ -68,7 +68,7 @@ class MobileNavBar extends HookConsumerWidget {
     final containerHeight = useState<double>(0.0);
     final isScrolled = ref.watch(scrolledProvider);
 
-    final navBarColor = isScrolled ? lightYellow : Colors.white;
+    final navBarColor = isScrolled ? Colors.white : Colors.transparent;
     return Stack(
       children: [
         AnimatedContainer(
@@ -79,6 +79,9 @@ class MobileNavBar extends HookConsumerWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
+                const SizedBox(
+                  height: 45,
+                ),
                 NavBarButton(
                   text: "Home",
                   onTap: () {
