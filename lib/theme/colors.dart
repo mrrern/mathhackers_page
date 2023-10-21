@@ -13,3 +13,8 @@ const String logo2 = 'assets/logo2.png';
 const String logobn = 'assets/logobn.png';
 const String logo2ln = 'assets/logo2ln.png';
 const String logo2ln1 = 'assets/logo2ln1.png';
+
+const String shapes = 'assets/rive/shapes.riv';
+const String shapes1 = 'assets/rive/shapes1.riv';
+const String shapes2 = 'assets/rive/shapes2.riv';
+const String slogan = 'assets/rive/slogan.riv';

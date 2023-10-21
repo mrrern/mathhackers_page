@@ -12,6 +12,7 @@ export 'package:flutter_hooks/flutter_hooks.dart';
 export 'package:math_hackers_page/providers/providers.dart';
 export 'package:math_hackers_page/theme/colors.dart';
 export 'package:google_fonts/google_fonts.dart';
+export 'package:rive/rive_web.dart';
 
 //Rutas de la pagina
 export 'package:math_hackers_page/app.dart';

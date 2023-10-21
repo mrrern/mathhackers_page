@@ -1,5 +1,5 @@
 name: math_hackers_page
-description: "A new Flutter project."
+description: "Hackathon CoAfina 2023 - Equipo MathHackers"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -33,14 +33,38 @@ dependencies:
     sdk: flutter
   google_fonts: ^6.1.0
   hooks_riverpod: ^2.4.4
+  rive: ^0.11.17
   url_launcher: ^6.1.14
   url_strategy: ^0.2.0
 
 dev_dependencies:
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.0
   flutter_test:
     sdk: flutter
+  icons_launcher: ^2.1.4
 
+icons_launcher:
+  image_path: 'assets/logo.png'
+  platforms:
+    android:
+      enable: true
+      image_path: 'assets/logo.png'
+    ios:
+      enable: true
+      image_path: 'assets/logo.png'
+    web:
+      enable: true
+      image_path: 'assets/logo.png'
+      favicon_path: 'assets/logo.png'
+    macos:
+      enable: false
+      image_path: 'assets/logo.png'
+    windows:
+      enable: false
+      image_path: 'assets/logo.png'
+    linux:
+      enable: false
+      image_path: 'assets/logo.png'
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter packages.
@@ -53,6 +77,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/
+    - assets/rive/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
