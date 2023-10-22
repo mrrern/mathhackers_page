@@ -5,10 +5,10 @@ class NavBarButton extends HookConsumerWidget {
   final String text;
 
   const NavBarButton({
-    Key? key,
+    super.key,
     required this.onTap,
     required this.text,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -28,7 +28,7 @@ class NavBarButton extends HookConsumerWidget {
           child: Container(
             height: 50,
             alignment: Alignment.center,
-            margin: EdgeInsets.symmetric(horizontal: 16),
+            margin: const EdgeInsets.symmetric(horizontal: 16),
             child: Text(
               text,
               style: GoogleFonts.josefinSans(

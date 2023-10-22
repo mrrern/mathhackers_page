@@ -26,7 +26,7 @@ class MyHomePage extends HookConsumerWidget {
     }, [_controller]);
 
     double width = MediaQuery.of(context).size.width;
-    double maxWith = width > 1200 ? 1200 : width;
+    double maxWith = width > MediaQuery.of(context).size.width ? MediaQuery.of(context).size.width : width;
 
     ref
         .watch(currentPageProvider.notifier)

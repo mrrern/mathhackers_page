@@ -13,7 +13,6 @@ class HomeContent extends ResponsiveWidget {
 
   @override
   Widget buildMobile(BuildContext context) {
-    
     return const MobileContent();
   }
 }
@@ -58,37 +57,41 @@ class MobileContent extends HookConsumerWidget {
   const MobileContent({super.key});
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return Stack(
-      children: [
-        SizedBox(
-            width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height * .3,
-            child: const RiveAnimation.asset(
-              shapes2,
-              fit: BoxFit.fitHeight,
-              alignment: Alignment.center,
-            )),
-        SizedBox(
-            width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height * .6,
-            child: const RiveAnimation.asset(
-              shapes2,
-              fit: BoxFit.fitWidth,
-            )),
-        Positioned.fill(
-            child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 30, sigmaY: 30),
-          child: const SizedBox(),
-        )),
-        SizedBox(
-            width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height * .6,
-            child: const RiveAnimation.asset(
-              slogan,
-              fit: BoxFit.fitHeight,
-              alignment: Alignment.center,
-            )),
-      ],
+    return SafeArea(
+      child: Stack(
+        children: [
+          SizedBox(
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height * .3,
+              child: const RiveAnimation.asset(
+                shapes2,
+                fit: BoxFit.fitHeight,
+                alignment: Alignment.center,
+              )),
+          SizedBox(
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height * .6,
+              child: const RiveAnimation.asset(
+                shapes2,
+                fit: BoxFit.fitWidth,
+              )),
+          Positioned.fill(
+              child: BackdropFilter(
+            filter: ImageFilter.blur(sigmaX: 30, sigmaY: 30),
+            child: const SizedBox(),
+          )),
+          Center(
+            child: SizedBox(
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height * .6,
+                child: const RiveAnimation.asset(
+                  slogan,
+                  fit: BoxFit.contain,
+                  alignment: Alignment.center,
+                )),
+          ),
+        ],
+      ),
     );
   }
 }
