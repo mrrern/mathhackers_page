@@ -3,8 +3,8 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"index.html": "505c9cf5ddb0b45ec0d18103b383de9c",
-"/": "505c9cf5ddb0b45ec0d18103b383de9c",
+const RESOURCES = {"index.html": "c657bba17be49f40f3ada5a83a95dd49",
+"/": "c657bba17be49f40f3ada5a83a95dd49",
 "version.json": "d42075ae5382f7e711800fd2a8ebdd5a",
 "favicon.png": "db46b0f6ee7b1e798cf5b42a737dc0b0",
 "assets/AssetManifest.bin": "4913407038337c571e23b9b8b34bd1de",
@@ -17,7 +17,7 @@ const RESOURCES = {"index.html": "505c9cf5ddb0b45ec0d18103b383de9c",
 "assets/assets/logo2ln.png": "7e486ecafbebaec0065f8e97c233a9f8",
 "assets/assets/logo2ln1.png": "615442d6cb23b775467892f856ed2e21",
 "assets/assets/logobn.png": "0117bd64edadc26be8c5fb41055fba0d",
-"assets/assets/rive/slogan.riv": "d849d1be85ce76862967f396319a8646",
+"assets/assets/rive/slogan.riv": "69d6da2a2a57fd9ab25f43f7a22233be",
 "assets/assets/rive/shapes2.riv": "593dd7524d46b88adc0769da2754e2fa",
 "assets/assets/rive/shapes.riv": "98ab961f483245679dd42d6f2d3b5b66",
 "assets/assets/rive/shapes1.riv": "2051a8205d9642be9b98d7569b8ed83a",
