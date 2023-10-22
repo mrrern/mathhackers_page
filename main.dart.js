@@ -65724,11 +65724,11 @@ m=A.di(A.a0D("assets/coafinalogo.png",B.a3,B.dc,p),l.a.b*0.4,m.a.a*0.3)
 l=A.aM(a,p,o).w
 s=A.aM(a,p,o).w
 r=t.T
-l=A.jh(p,A.a6c(A.a([m,A.di(A.o2(A.ajj(u.d,A.asi().$1$textStyle(A.nf(p,p,B.i,p,p,p,p,p,p,p,p,A.aM(a,p,o).w.a.a*0.0136,p,p,p,p,p,!0,p,p,p,p,p,p,p,p)),B.bW),p,p),s.a.b*0.5,l.a.a*0.8)],r),B.cB),B.t,B.jt,p,p,p,p,p,p,p,p,p)
+l=A.jh(p,A.a6c(A.a([m,A.di(A.o2(A.ajj(u.d,A.asi().$1$textStyle(A.nf(p,p,B.i,p,p,p,p,p,p,p,p,A.aM(a,p,o).w.a.a*0.0136,p,p,p,p,p,!0,p,p,p,p,p,p,p,p)),B.bW),p,p),s.a.b*0.6,l.a.a*0.6)],r),B.cB),B.t,B.jt,p,p,p,p,p,p,p,p,p)
 s=A.di(p,A.aM(a,p,o).w.a.b*0.05,p)
 m=A.aM(a,p,o).w
 q=A.aM(a,p,o).w
-return A.di(A.Fw(A.a([l,s,A.o2(A.di(A.apo($.alp()),q.a.b*0.3,m.a.a*0.4),p,p),A.di(p,A.aM(a,p,o).w.a.b*0.05,p)],r)),p,n.a.a)}}
+return A.di(A.Fw(A.a([l,s,A.o2(A.di(A.apo($.alp()),q.a.b*0.6,m.a.a*0.6),p,p),A.di(p,A.aM(a,p,o).w.a.b*0.05,p)],r)),p,n.a.a)}}
 A.J3.prototype={
 l0(a,b){var s,r,q,p=null,o=t.w,n=A.aM(a,p,o).w,m=A.aM(a,p,o).w,l=A.aM(a,p,o).w
 m=A.di(A.a0D("assets/coafinalogo.png",B.a3,B.dc,p),l.a.b*0.4,m.a.a*0.8)
