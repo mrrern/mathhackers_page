@@ -58,6 +58,7 @@ class MyHomePage extends HookConsumerWidget {
                     const ShapesAnimationContainer(),
                     //Desafio
                     DesafioContent(key: desafioKey),
+                    const ShapesAnimationContainer(),
                     //Sepsis
                     SepsisContent(
                       key: sepsisKey,
