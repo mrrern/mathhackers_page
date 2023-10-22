@@ -30,44 +30,12 @@ class AboutContent extends HookConsumerWidget {
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
+            
             SizedBox(
               width: MediaQuery.of(context).size.width * .4,
               height: MediaQuery.of(context).size.height * .6,
               child: Center(
-                child: Column(
-                  children: [
-                    Center(
-                      child: Text('Causas',
-                          textAlign: TextAlign.center,
-                          style: GoogleFonts.josefinSans(
-                            textStyle: TextStyle(
-                              color: darkBlue,
-                              fontWeight: FontWeight.w800,
-                              fontSize: MediaQuery.of(context).size.width * .02,
-                            ),
-                          )),
-                    ),
-                    SizedBox(
-                      height: MediaQuery.of(context).size.height * .01,
-                    ),
-                    Text(
-                      'Las causas de la sepsis son diversas e incluyen infecciones bacterianas, virales, fúngicas o parasitarias. La fuente de la infección puede estar en cualquier parte del cuerpo, desde los pulmones hasta el tracto urinario o incluso una herida en la piel. La sepsis a menudo se desarrolla cuando una infección no se controla o se trata adecuadamente, permitiendo que las bacterias u otros patógenos se propaguen en la sangre.',
-                      textAlign: TextAlign.justify,
-                      style: GoogleFonts.poppins(
-                          textStyle: TextStyle(
-                        color: darkBlue,
-                        fontSize: MediaQuery.of(context).size.width * .0136,
-                      )),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            SizedBox(
-              width: MediaQuery.of(context).size.width * .4,
-              height: MediaQuery.of(context).size.height * .6,
-              child: Center(
-                child: Column(
+                child: Row(
                   children: [
                     Center(
                       child: Text('Oscar Altuve',
@@ -80,8 +48,13 @@ class AboutContent extends HookConsumerWidget {
                             ),
                           )),
                     ),
+                    const SizedBox(
+                      width: 10,
+                    ),
                     SizedBox(
-                      height: MediaQuery.of(context).size.height * .01,
+                      height: MediaQuery.of(context).size.height * .6,
+                      width: MediaQuery.of(context).size.width * .6,
+
                     ),
                     Text(
                       'Soy egresado de la Licenciatura en Física en la Universidad de Los Andes (ULA), participé de la 2da. cohorte de LA-CoNGA physics y actualmente soy estudiante de la Maestría en Física en la Universidad Simón Bolívar (USB) en Venezuela. Mi área de estudio es física de altas energías experimental y ciencia de datos. Tengo habilidades en programación en C++ y Python, reproducibilidad científica, manejo herramientas de edición multimedia y nociones en diseño web. Participé en el hackathon CoAfina 2022, una experiencia maravillosa que me permitió colaborar con otros estudiantes de América Latina para encontrar soluciones innovadoras a retos científicos y educativos usando datos abiertos. Es un placer formar parte de esta nueva edición y espero seguir compartiendo y aprendiendo con todos ustedes. Me pueden conseguir en LinkedIn: https://ve.linkedin.com/in/altuos/',
@@ -253,154 +226,12 @@ class AboutContent extends HookConsumerWidget {
          SizedBox(
           height: MediaQuery.of(context).size.height * .03,
         ),
-        Row(
-          mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            SizedBox(
-              width: MediaQuery.of(context).size.width * .4,
-              height: MediaQuery.of(context).size.height * .6,
-              child: Center(
-                child: Column(
-                  children: [
-                    Center(
-                      child: Text('Causas',
-                          textAlign: TextAlign.center,
-                          style: GoogleFonts.josefinSans(
-                            textStyle: TextStyle(
-                              color: darkBlue,
-                              fontWeight: FontWeight.w800,
-                              fontSize: MediaQuery.of(context).size.width * .02,
-                            ),
-                          )),
-                    ),
-                    SizedBox(
-                      height: MediaQuery.of(context).size.height * .01,
-                    ),
-                    Text(
-                      'Las causas de la sepsis son diversas e incluyen infecciones bacterianas, virales, fúngicas o parasitarias. La fuente de la infección puede estar en cualquier parte del cuerpo, desde los pulmones hasta el tracto urinario o incluso una herida en la piel. La sepsis a menudo se desarrolla cuando una infección no se controla o se trata adecuadamente, permitiendo que las bacterias u otros patógenos se propaguen en la sangre.',
-                      textAlign: TextAlign.justify,
-                      style: GoogleFonts.poppins(
-                          textStyle: TextStyle(
-                        color: darkBlue,
-                        fontSize: MediaQuery.of(context).size.width * .0136,
-                      )),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            SizedBox(
-              width: MediaQuery.of(context).size.width * .4,
-              height: MediaQuery.of(context).size.height * .6,
-              child: Center(
-                child: Column(
-                  children: [
-                    Center(
-                      child: Text('Síntomas',
-                          textAlign: TextAlign.center,
-                          style: GoogleFonts.josefinSans(
-                            textStyle: TextStyle(
-                              color: darkBlue,
-                              fontWeight: FontWeight.w800,
-                              fontSize: MediaQuery.of(context).size.width * .02,
-                            ),
-                          )),
-                    ),
-                    SizedBox(
-                      height: MediaQuery.of(context).size.height * .01,
-                    ),
-                    Text(
-                      'La sepsis presenta una variedad de síntomas que pueden variar en gravedad. Estos pueden incluir fiebre alta o hipotermia (temperatura corporal baja), taquicardia (ritmo cardíaco acelerado), taquipnea (respiración rápida), confusión o cambios en el estado mental, hipotensión (presión arterial baja), coloración de la piel anormal (pálida, moteada o cianótica) y signos de disfunción orgánica, como dificultad para respirar o insuficiencia renal.',
-                      textAlign: TextAlign.justify,
-                      style: GoogleFonts.poppins(
-                          textStyle: TextStyle(
-                        color: darkBlue,
-                        fontSize: MediaQuery.of(context).size.width * .0136,
-                      )),
-                    ),
-                  ],
-                ),
-              ),
-            )
-          ],
-        ),
+       
 
          SizedBox(
           height: MediaQuery.of(context).size.height * .03,
         ),
-        Row(
-          mainAxisSize: MainAxisSize.max,
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            SizedBox(
-              width: MediaQuery.of(context).size.width * .4,
-              height: MediaQuery.of(context).size.height * .6,
-              child: Center(
-                child: Column(
-                  children: [
-                    Center(
-                      child: Text('Causas',
-                          textAlign: TextAlign.center,
-                          style: GoogleFonts.josefinSans(
-                            textStyle: TextStyle(
-                              color: darkBlue,
-                              fontWeight: FontWeight.w800,
-                              fontSize: MediaQuery.of(context).size.width * .02,
-                            ),
-                          )),
-                    ),
-                    SizedBox(
-                      height: MediaQuery.of(context).size.height * .01,
-                    ),
-                    Text(
-                      'Las causas de la sepsis son diversas e incluyen infecciones bacterianas, virales, fúngicas o parasitarias. La fuente de la infección puede estar en cualquier parte del cuerpo, desde los pulmones hasta el tracto urinario o incluso una herida en la piel. La sepsis a menudo se desarrolla cuando una infección no se controla o se trata adecuadamente, permitiendo que las bacterias u otros patógenos se propaguen en la sangre.',
-                      textAlign: TextAlign.justify,
-                      style: GoogleFonts.poppins(
-                          textStyle: TextStyle(
-                        color: darkBlue,
-                        fontSize: MediaQuery.of(context).size.width * .0136,
-                      )),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            SizedBox(
-              width: MediaQuery.of(context).size.width * .4,
-              height: MediaQuery.of(context).size.height * .6,
-              child: Center(
-                child: Column(
-                  children: [
-                    Center(
-                      child: Text('Síntomas',
-                          textAlign: TextAlign.center,
-                          style: GoogleFonts.josefinSans(
-                            textStyle: TextStyle(
-                              color: darkBlue,
-                              fontWeight: FontWeight.w800,
-                              fontSize: MediaQuery.of(context).size.width * .02,
-                            ),
-                          )),
-                    ),
-                    SizedBox(
-                      height: MediaQuery.of(context).size.height * .01,
-                    ),
-                    Text(
-                      'La sepsis presenta una variedad de síntomas que pueden variar en gravedad. Estos pueden incluir fiebre alta o hipotermia (temperatura corporal baja), taquicardia (ritmo cardíaco acelerado), taquipnea (respiración rápida), confusión o cambios en el estado mental, hipotensión (presión arterial baja), coloración de la piel anormal (pálida, moteada o cianótica) y signos de disfunción orgánica, como dificultad para respirar o insuficiencia renal.',
-                      textAlign: TextAlign.justify,
-                      style: GoogleFonts.poppins(
-                          textStyle: TextStyle(
-                        color: darkBlue,
-                        fontSize: MediaQuery.of(context).size.width * .0136,
-                      )),
-                    ),
-                  ],
-                ),
-              ),
-            )
-          ],
-        ),
+        
       ]),
     );
   }
