@@ -35,7 +35,7 @@ final sepsisKey = GlobalKey();
 final codeKey = GlobalKey();
 final detectionKey = GlobalKey();
 
-const linkLaCoNGA = 'https://www.youtube.com/embed/wuV2q0qc1jo';
+const linkLaCoNGA = 'https://www.youtube.com/embed/6pN5c834vY8';
 
 final List<String> sirs = [
 'Fiebre o hipotermia (temperatura corporal alta o baja).',
