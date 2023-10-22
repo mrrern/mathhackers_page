@@ -26,7 +26,9 @@ class MyHomePage extends HookConsumerWidget {
     }, [_controller]);
 
     double width = MediaQuery.of(context).size.width;
-    double maxWith = width > MediaQuery.of(context).size.width ? MediaQuery.of(context).size.width : width;
+    double maxWith = width > MediaQuery.of(context).size.width
+        ? MediaQuery.of(context).size.width
+        : width;
 
     ref
         .watch(currentPageProvider.notifier)
@@ -49,12 +51,25 @@ class MyHomePage extends HookConsumerWidget {
                     HomeContent(
                       key: homeKey,
                     ),
-                    //Hackathon
+                    //MODASAFE
                     HackathonContent(
                       key: hackathonKey,
                     ),
+                    const ShapesAnimationContainer(),
                     //Desafio
                     DesafioContent(key: desafioKey),
+                    //Sepsis
+                    SepsisContent(
+                      key: sepsisKey,
+                    ),
+                    //Métodos de Detección
+                    DetectionContent(
+                      key: detectionKey,
+                    ),
+                    //Código
+                    CodeContent(
+                      key: codeKey,
+                    ),
                     //Sobre Nosotros
                     AboutContent(key: aboutKey),
                     //Espacio en Blanco

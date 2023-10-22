@@ -1,7 +1,7 @@
 import 'package:math_hackers_page/routes/linkspage.dart';
 
 class NavBar extends ResponsiveWidget {
-  const NavBar({Key? key}) : super(key: key);
+  const NavBar({super.key});
 
   @override
   Widget buildDesktop(BuildContext context) {
@@ -15,7 +15,7 @@ class NavBar extends ResponsiveWidget {
 }
 
 class DesktopNavBar extends HookConsumerWidget {
-  const DesktopNavBar({Key? key}) : super(key: key);
+  const DesktopNavBar({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -25,7 +25,7 @@ class DesktopNavBar extends HookConsumerWidget {
     return Container(
       color: navBarColor,
       child: Padding(
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         child: Row(
           children: <Widget>[
             Image.asset(
@@ -36,22 +36,37 @@ class DesktopNavBar extends HookConsumerWidget {
             NavBarButton(
               onTap: () =>
                   ref.read(currentPageProvider.notifier).state = homeKey,
-              text: "Home",
+              text: "INICIO",
             ),
             NavBarButton(
               onTap: () =>
                   ref.read(currentPageProvider.notifier).state = hackathonKey,
-              text: "Hackathon",
+              text: "MODASAFE",
             ),
             NavBarButton(
               onTap: () =>
                   ref.read(currentPageProvider.notifier).state = desafioKey,
-              text: "Desafío",
+              text: "DESAFÍO",
+            ),
+            NavBarButton(
+              onTap: () =>
+                  ref.read(currentPageProvider.notifier).state = sepsisKey,
+              text: "SEPSIS",
+            ),
+            NavBarButton(
+              onTap: () =>
+                  ref.read(currentPageProvider.notifier).state = detectionKey,
+              text: "DETECCIÓN",
+            ),
+            NavBarButton(
+              onTap: () =>
+                  ref.read(currentPageProvider.notifier).state = codeKey,
+              text: "CÓDIGO",
             ),
             NavBarButton(
               onTap: () =>
                   ref.read(currentPageProvider.notifier).state = aboutKey,
-              text: "Sobre Nosotros",
+              text: "NOSOTROS",
             ),
           ],
         ),
@@ -61,7 +76,7 @@ class DesktopNavBar extends HookConsumerWidget {
 }
 
 class MobileNavBar extends HookConsumerWidget {
-  const MobileNavBar({Key? key}) : super(key: key);
+  const MobileNavBar({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -72,8 +87,8 @@ class MobileNavBar extends HookConsumerWidget {
     return Stack(
       children: [
         AnimatedContainer(
-          margin: EdgeInsets.only(top: 70.0),
-          duration: Duration(milliseconds: 350),
+          margin: const EdgeInsets.only(top: 70.0),
+          duration: const Duration(milliseconds: 350),
           curve: Curves.ease,
           height: containerHeight.value,
           child: SingleChildScrollView(
@@ -83,28 +98,43 @@ class MobileNavBar extends HookConsumerWidget {
                   height: 45,
                 ),
                 NavBarButton(
-                  text: "Home",
+                  text: "INICIO",
                   onTap: () {
                     ref.read(currentPageProvider.notifier).state = homeKey;
                     containerHeight.value = 0;
                   },
                 ),
                 NavBarButton(
-                  text: "Hackathon",
+                  text: "MODASAFE",
                   onTap: () {
                     ref.read(currentPageProvider.notifier).state = hackathonKey;
                     containerHeight.value = 0;
                   },
                 ),
                 NavBarButton(
-                  text: "Desafío",
+                  text: "DESAFÍO",
                   onTap: () {
                     ref.read(currentPageProvider.notifier).state = desafioKey;
                     containerHeight.value = 0;
                   },
                 ),
                 NavBarButton(
-                  text: "Sobre Nosotros",
+                  onTap: () =>
+                      ref.read(currentPageProvider.notifier).state = sepsisKey,
+                  text: "SEPSIS",
+                ),
+                NavBarButton(
+                  onTap: () => ref.read(currentPageProvider.notifier).state =
+                      detectionKey,
+                  text: "DETECCIÓN",
+                ),
+                NavBarButton(
+                  onTap: () =>
+                      ref.read(currentPageProvider.notifier).state = codeKey,
+                  text: "CÓDIGO",
+                ),
+                NavBarButton(
+                  text: "NOSOTROS",
                   onTap: () {
                     ref.read(currentPageProvider.notifier).state = aboutKey;
                     containerHeight.value = 0;
@@ -117,14 +147,14 @@ class MobileNavBar extends HookConsumerWidget {
         Container(
           color: navBarColor,
           child: Padding(
-            padding: EdgeInsets.all(16),
+            padding: const EdgeInsets.all(16),
             child: Row(
               children: <Widget>[
                 Image.asset(
                   logo2ln,
                   height: MediaQuery.of(context).size.height * .13,
                 ),
-                SizedBox(width: 10.0),
+                const SizedBox(width: 10.0),
                 Expanded(
                   child: Container(),
                 ),
@@ -132,10 +162,12 @@ class MobileNavBar extends HookConsumerWidget {
                   child: InkWell(
                     splashColor: Colors.white60,
                     onTap: () {
-                      final height = containerHeight.value > 0 ? 0.0 : 240.0;
+                      final height = containerHeight.value > 0
+                          ? 0.0
+                          : MediaQuery.of(context).size.height * .8;
                       containerHeight.value = height;
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.menu,
                       color: Colors.black54,
                     ),
