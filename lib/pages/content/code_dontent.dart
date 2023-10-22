@@ -17,7 +17,7 @@ class CodeContent extends HookConsumerWidget {
                 width: MediaQuery.of(context).size.width * .3,
                 child: GestureDetector(
                   onTap: () {
-                    const url = 'https://mrrern.github.io/mathhackers_page/';
+                    const url = 'https://github.com/AltuOs/deteccion_de_sepsis';
                      launchUrl(Uri.parse(url));
                   },
                   child: Image.asset('assets/modesafe.png',
@@ -34,7 +34,7 @@ class CodeContent extends HookConsumerWidget {
                     style: GoogleFonts.poppins(
                         textStyle: TextStyle(
                       color: Colors.white,
-                      fontSize: MediaQuery.of(context).size.width * .1,
+                      fontSize: MediaQuery.of(context).size.width * .05,
                     )),
                   ),
                 ),
