@@ -16,8 +16,6 @@ export 'package:google_fonts/google_fonts.dart';
 export 'package:rive/rive_web.dart';
 export 'package:webview_flutter/webview_flutter.dart';
 
-
-
 //Rutas de la pagina
 export 'package:math_hackers_page/app.dart';
 export 'package:math_hackers_page/pages/home.dart';
@@ -38,3 +36,30 @@ final codeKey = GlobalKey();
 final detectionKey = GlobalKey();
 
 const linkLaCoNGA = 'https://www.youtube.com/embed/wuV2q0qc1jo';
+
+final List<String> sirs = [
+'Fiebre o hipotermia (temperatura corporal alta o baja).',
+'Taquicardia (frecuencia cardíaca elevada).',
+'Taquipnea (frecuencia respiratoria elevada).',
+'Recuento de glóbulos blancos elevado (leucocitosis) o bajo (leucopenia).',
+];
+
+final List<String> qsofa = [
+'Frecuencia respiratoria igual o superior a 22 respiraciones por minuto.',
+'Presión arterial sistólica igual o inferior a 100 mm Hg.',
+'Estado mental alterado (confusión o disminución del nivel de conciencia, con una puntuación de Glasgow menor o igual a 14).',
+];
+final List<String> sofa = [
+'Respiratorio.',
+'Sistema nervioso central.',
+'Cardiovascular.',
+'Hepático.',
+'Coagulación.',
+'Renal.'
+];
+final List<String> refs = [
+'Beltran, C. F. T., Ibañez, E. D. V., Orejuela, V. M., & García Henao, J. A. (2022, September). A Machine Learning-Based Missing Data Imputation with FHIR Interoperability Approach in Sepsis Prediction. In Latin American High Performance Computing Conference (pp. 116-130). Cham: Springer International Publishing.',
+'Reyna, M. A., Josef, C. S., Jeter, R., Shashikumar, S. P., Westover, M. B., Nemati, S., ... & Sharma, A. (2020). Early prediction of sepsis from clinical data: the PhysioNet/Computing in Cardiology Challenge 2019. Critical care medicine, 48(2), 210-217.',
+];
+
+
